@@ -5,4 +5,6 @@ class ApplicationController < ActionController::Base
    def goodbye
     render html: 'goodbye, world!'
   end
+
+  include SessionsHelper
 end
