@@ -15,8 +15,8 @@ class UsersLoginTest < ActionDispatch::IntegrationTest
   end
 
     def setup
-    @user = users(:michael)
-  end
+      @user = users(:michael)
+    end
 
     test "login with valid information followed by logout" do
     post login_path, params: { session: { email:    @user.email,
